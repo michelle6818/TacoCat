@@ -45,7 +45,38 @@
         </form> -->
     </div>
 </nav>
+<div class="container">
+  <div class="row">
+   <div class="col">
+<pre class="line numbers">
+<code class="language-javascript">
+// I write custom JS 
+//    How do I wire up an event handler for the click event of the btnDemo3 button
+     
+document.getElementById("btnWord").addEventListener("click", function(){
+  let userWord = document.getElementById("input").value;
+  let userWordReverse = userWord.split("").reverse().join("");
 
+  if(userWord == userWordReverse){
+      document.getElementById("answer").innerHTML = userWord + " is a palindrome!";
+  }
+  else{
+      document.getElementById("answer").innerHTML = userWord + " is NOT a palindrome!";
+  }   
+  
+});
+
+          // clear form
+document.getElementById("btnClear").addEventListener("click", function(){
+  document.getElementById("input").value = "";
+  document.getElementById("answer").innerText = "";
+})  
+        
+        </code>
+      </pre>
+    </div>
+  </div>
+</div>
   <!-- Jumbotron section-->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">

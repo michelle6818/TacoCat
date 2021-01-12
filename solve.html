@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>TacoCat</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -44,131 +44,40 @@
   <!-- Jumbotron section-->
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-3">This is the Solve Page</h1>
-      <p class="lead">Jumbo helper text</p>
+      <h1 class="display-3">Taco Cat</h1>
+      <p class="lead">Find out if a word or number is a palindrome</p>
       <hr class="my-2">
-      <p>More info</p>
-      <p class="lead">
+      <!-- <p class="lead">
         <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-      </p>
+      </p> -->
     </div>
   </div>
 
-<hr>
 
 <!-- This is where I lay out the UI for the exercise -->
-
 <div class="container">
-    <div class="row"> 
-      <!-- Column 1 is an input -->
-      <div class="col-4">
-        <input id="input1" type="text" class="form-control" placeholder="Enter number 1">
-      </div>
-
-      <!-- Column 2 is an input -->
-      <div class="col-4">
-         <input id="input2" type="text" class="form-control" placeholder="Enter Word 1">
-      </div>
-      
-      <!-- Column 3 is a button 
-          The button is what we will use to add as eventlistener....
-      -->
-      <div class="col-4">
-        <button id="btnDemo1" class="btn btn-dark">Click Me</button>
-             </div>
-    </div> 
-<br>
-     <!-- create second row within first row for the output-->
-     <div class="row">
-        <div class="col-4">
-            <p id="output1"></p>
-           </div>
-           <div class="col-4">
-            <p id="output2"></p>
-         </div>
-     </div> 
-    </div>
-
-
-    <br>
-    <hr>
-    <br>
-
-    <!-- Second row of text for numbers and words -->
-     <div class="container">
-       <div class="row"> 
-        <!-- Column 1a is an input -->
-        <div class="col-4">
-          <input id="input3" type="text" class="form-control" placeholder="Enter number 2">
+    <div class="row">
+        <div class="col">
+            <input type="text" placeholder="Enter Word" id="input">
         </div>
-  
-        <!-- Column 2a is an input -->
-        <div class="col-4">
-           <input id="input4" type="text" class="form-control" placeholder="Enter Word 2">
+        <div class="col">
+            <button id="btnWord" class="btn btn-dark">Click Me</button>
+        </div>
+        <div class="col">
+            <button id="btnClear" class="btn btn-success">Clear</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p id="answer"></p>
         </div>
         
-        <!-- Column 3a is a button 
-            The button is what we will use to add as eventlistener....
-        -->
-        <div class="col-4">
-          <button id="btnDemo2" class="btn btn-dark">Click Me</button>
-        </div>
-       </div>
-    <br>
-       <!-- create second row within second row for the output-->
-       <div class="row">
-          <div class="col-4">
-              <p id="output3"></p>
-             </div> 
-
-             <div class="col-4">
-              <p id="output4"></p>
-             </div>
-         </div>
-    </div>
+    </div>        
+</div>
 
 
-    <!--  -->
-    
-    <div class="container">
-       <div class="row">
-           <div class="col">
-               <button class="btn btn-dark btn-lg" id="btnDemo3">Click Me To Perform the Loop!</button>
-           </div>
-       </div>
-       <div class="row">
-        <div class="col">
-            <p id="output5"></p>
-            </div>
-        </div>
-    </div>
 
-    <br>
-    <hr>
-    <br>
 
-    <div class="container">
-        <div class="row">
-            <div class= "col">
-                <input type="text" placeholder="Enter Word" id="input5">
-            </div>
-            <div class="col">
-                <button id=btnWord class="btn btn-dark">Click Me</button>
-            </div>
-            <div class="col">
-                <button id=btnClear class="btn btn-primary">Clear</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <p id = "output6"></p>
-            </div>
-        </div>
-                <div class="col">
-                    <p id = "output7"></p>
-                </div>
-        </div>
-    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

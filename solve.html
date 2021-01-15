@@ -40,41 +40,43 @@
 </nav>
 
   <!-- Jumbotron section-->
+  <header>
   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-3">Taco Cat</h1>
+    <div class="container d-flex flex-column align-items-center aos-init aos-animate"
+    data-aos= "zoom-in"data-aos-delay= "100">
+      <h1 class="display-3">Welcome to Taco Cat!</h1>
+      <br>
+      <div class="row mb-0">
+        <div class="col">
       <p class="lead">Find out if a word or number is a palindrome</p>
       <hr class="my-2">
     </div>
   </div>
+  </div>
+  </div>
 
 
 <!-- This is where I lay out the UI for the exercise -->
-<div class="container">
-    <div class="row">
-        <div class="col">
+<div class="container align-items-center">
+    <div class="row align-content-center">
+        <div class="offset-3 col-3">
             <input type="text" placeholder="Enter Word" id="input">
         </div>
-        <div class="col">
-            <button id="btnWord" class="btn btn-dark">Click Me</button>
-        </div>
-        <div class="col">
-            <button id="btnClear" class="btn btn-success">Clear</button>
-        </div>
-    </div>
-    <div class="row">
-      <div class="col">
+        <div class="col-3">
           <p id="reverseUserWord" style="font-weight:bold"></p>
-      </div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col">
-            <p id="answer" style="font-weight:bold"></p>
-        </div>
-        </div>
-    </div>        
+    <br>
+      <div class="row">
+        <div class="offset-3 col-3">
+            <button id="btnWord" class="btn btn-primary">Click Me</button>
+            <button id="btnClear" class="btn btn-outline-primary">Clear</button>
+        </div> 
+          <div class="col-3">
+             <p id="answer" style="font-weight:bold"></p> 
+          </div>        
 </div>
-
+</header>
 
 
 

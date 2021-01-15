@@ -8,6 +8,8 @@ document.getElementById("btnWord").addEventListener("click", function(){
     let userWord = document.getElementById("input").value;
     let userWordReverse = userWord.split("").reverse().join("");
 
+    document.getElementById("reverseUserWord").innerHTML = userWord + " spelled backwords is: " + userWordReverse
+
     if(userWord == userWordReverse){
         document.getElementById("answer").innerHTML = userWord + " is a palindrome!";
     }
@@ -21,6 +23,7 @@ document.getElementById("btnWord").addEventListener("click", function(){
 document.getElementById("btnClear").addEventListener("click", function(){
     document.getElementById("input").value = "";
     document.getElementById("answer").innerText = "";
+    document.getElementById("reverseUserWord").innerText = "";
 })  
             
             

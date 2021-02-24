@@ -8,32 +8,32 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="style.css">
 
   </head>
   <body>
     <!-- Navigation Section -->
 <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002f4e;">
-    <a class="navbar-brand" href="#">Solve</a>
+    <a class="navbar-brand" href="#">TacoCat</a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html"><i class="bx bx-home-heart"></i>Home</a>
         </li>
             <li class="nav-item active">
-                <a class="nav-link" href="solve.html">Solve</a>
+                <a class="nav-link" href="solve.html"><i class="bx bx-glasses-alt"></i>Solve</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="code.html">Code</a>
+              <a class="nav-link" href="code.html"><i class="bx bxl-javascript"></i>Code</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/michelle6818/TacoCat">GitHub</a>
+            <a class="nav-link" target="_blank" href="https://github.com/michelle6818/TacoCat"><i class="bx bxl-github"></i>GitHub</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://michellelongworth-portfolio.netlify.app/index.html">Portfolio</a>
+            <a class="nav-link" target="_blank" href="https://michellelongworth-portfolio.netlify.app/index.html"><i class="bx bx-briefcase"></i>Portfolio</a>
           </li>
         </ul>
     </div>
@@ -54,38 +54,52 @@
   </div>
   </div>
   </div>
-
+  </header>
 
 <!-- This is where I lay out the UI for the exercise -->
-<div class="container align-items-center">
-    <div class="row align-content-center">
-        <div class="offset-3 col-3">
-            <input type="text" placeholder="Enter Word" id="input">
+<div class="container text-center pt-2">
+    <div class="row">
+        <div class="col-4 offset-4">
+            <input type="text" placeholder="Enter Your Word" class="form-control" id="input">
         </div>
-        <div class="col-3">
-          <p id="reverseUserWord" style="font-weight:bold"></p>
-        </div>
+      </div>
     </div>
     <br>
-      <div class="row">
-        <div class="offset-3 col-3">
-            <button id="btnWord" class="btn btn-outline-dark">Click Me</button>
-            <button id="btnClear" class="btn btn-outline-success">Clear</button>
-        </div> 
-          <div class="col-3">
-             <p id="answer" style="font-weight:bold"></p> 
-          </div>        
+      <div class="row text-center">
+        <div class="col-4 offset-4">
+            <button id="btnWord" class="btn btn-outline-dark btn-lg" data-toggle="modal" data-target="#myModal">Click Me</button>
+            <button id="btnClear" class="btn btn-outline-success btn-lg">Clear</button>
+        </div>        
 </div>
-</header>
 
 
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/custom.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
 
+<div class="modal fade" id="myModal" tabindex="" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">TacoCat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">   
+            <p id="reverseUserWord" style="font-weight:bold"></p>        
+            <p id="answer" style="font-weight:bold"></p>         
+      </div>
+      
+      <div class="modal-footer"> 
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Back to Site</button>       
+      </div>
+    </div>
+  </div>
+</div>
     
 
   </body>

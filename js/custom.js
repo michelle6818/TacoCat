@@ -1,13 +1,17 @@
-// I write custom JS 
-        
-            
 
-    //    How do I wire up an event handler for the click event of the btnDemo3 button
+    //    Wire up an event handler for the click event of the btnDemo3 button
        
 document.getElementById("btnWord").addEventListener("click", function(){
-    let userWord = document.getElementById("input").value;
+    let userWordOrig = document.getElementById("input").value;
+    let userWord = userWordOrig.toLowerCase();
+    //Global regex
+    userWord = userWord.replace(/ /g, "");
     let userWordReverse = userWord.split("").reverse().join("");
-
+    
+    if(userWordOrig == 0)
+    {document.getElementById("answer").innerHTML = "You need to enter a word!";}
+    else
+    {
     document.getElementById("reverseUserWord").innerHTML = userWord + " spelled backwords is: " + userWordReverse
 
     if(userWord == userWordReverse){
@@ -16,7 +20,7 @@ document.getElementById("btnWord").addEventListener("click", function(){
     else{
         document.getElementById("answer").innerHTML = userWord + " is NOT a palindrome!";
     }   
-    
+}
 });
 
             // clear form

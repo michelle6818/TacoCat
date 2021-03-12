@@ -12,13 +12,13 @@ document.getElementById("btnWord").addEventListener("click", function(){
     {document.getElementById("answer").innerHTML = "You need to enter a word!";}
     else
     {
-    document.getElementById("reverseUserWord").innerHTML = userWord + " spelled backwords is: " + userWordReverse
+    document.getElementById("reverseUserWord").innerHTML = userWordOrig + " spelled backwords is: " + userWordReverse
 
     if(userWord == userWordReverse){
-        document.getElementById("answer").innerHTML = userWord + " is a palindrome!";
+        document.getElementById("answer").innerHTML = userWordOrig + " is a palindrome!";
     }
     else{
-        document.getElementById("answer").innerHTML = userWord + " is NOT a palindrome!";
+        document.getElementById("answer").innerHTML = userWordOrig + " is NOT a palindrome!";
     }   
 }
 });
